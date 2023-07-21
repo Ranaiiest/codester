@@ -2,7 +2,7 @@
 
 # Codester - Your Coding Companion
 
-![Codester Logo](asset/Screenshot2023-07-22031138.png)
+![Codester Logo](asset/prview.png)
 
 ## Description
 
