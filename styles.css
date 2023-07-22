@@ -409,13 +409,14 @@ li a{
 
     /* this is container and background section */
     .container{
-        height: 180vh;
+        height: 165vh;
         position: fixed;
         overflow: hidden;
         background-color: aqua;
         display: flex;
         flex-direction: column;
-        z-index: 3490;
+        
+        
     }
     .background{
         background-size: cover;
@@ -472,9 +473,9 @@ li a{
      .container .logreg-box{
         width: 100%;
         position: absolute;
-        top: 75vh ;
-        height: 60%;
-        backdrop-filter: blur();
+        top: 66vh ;
+        height: 63%;
+        backdrop-filter: blur(10px);
         
     }
 
