@@ -117,13 +117,18 @@ body{
 
 /* background section */
 .background{
-    height: 85vh;
+    height: 100vh;
     width: 100%;
     background: url(./photo-1568142402902-1298fe147da9.webp) no-repeat;
     background-size: cover;
-    background-position:top;
-    filter: blur(10px);
+    background-position:center;
     position: relative;
+}
+.inner-background{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(10px);
 }
 /* main content section */
 
@@ -165,11 +170,11 @@ body{
     color: #fff;
 }
 .content h1{
-    font-size: 2.5vw;
+    font-size: 3.3vmin;
     font-weight:900;
 }
 .content h3{
-    font-size: 2.2vw;
+    font-size: 3.2vw;
     font-weight: 800;
 }
 .container p{
@@ -321,7 +326,7 @@ li a{
     margin-bottom: 30px;
 }
 .sign-up{
-    transform: translateX(440px);
+    transform: translateX(600px);
     transition:all ease 0.7s;
     transition-delay: 0s;
 }
@@ -335,7 +340,7 @@ li a{
     transition-delay: .7s;
 }
 .logreg-box.active .sign-in{
-    transform: translateX(440px);
+    transform: translateX(600px);
     transition-delay: 0s;
 }
 
@@ -353,14 +358,11 @@ li a{
     
     .header h1 {
       display: inline-block;
-      margin-left: 40px;
+      /* margin-left: 40px; */
       position: relative;
       bottom: 28px;
     }
-    .content h2{
-        margin-top: 80px;
-        font-size: x-large;
-    }
+
     .header {
       display: flex;
       justify-content: space-between;
@@ -369,8 +371,9 @@ li a{
       background-position: center;
       background: #161E51;
       backdrop-filter: blur(10px);
-      
-      padding-top: 30px;/* Add some padding to the header for better responsiveness */
+      padding-bottom: 0;
+      margin-bottom: 0;
+      padding-top: 30px;
     }
     .dropdown-menu li{
         padding: .4rem;
@@ -396,54 +399,114 @@ li a{
     .dropdown-menu.open{
         height: 240px;
     }
-    .background{
-        background-size: cover;
-        background-position: center;
-        
-    }
+    
     .header .toggle-btn {
       display: inline-block;
       position: absolute;
       right: 2rem;
     }
     
+
+    /* this is container and background section */
     .container{
-        height: 160vh;
+        height: 180vh;
+        position: fixed;
+        overflow: hidden;
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        z-index: 3490;
+    }
+    .background{
+        background-size: cover;
+        background-position: center;
+        height: 205vh;
         position: relative;
+        
+    }
+    .inner-background{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+     /* this is the content section */
+    
+    .content h2{
+        display: flex;
+        justify-content: center;
     }
     .container .content{
         width: 100%;
-        max-width: 600px;
-        height: 50%;
+        height: 40%;
         order: 1;
+        padding-top: 20px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+    .content h1{
+        font-size: 20px;
+    }
+    .content h3{
+        font-size: 20px;
+    }
+    .content h2{
+        margin-top: 0px;
+        font-size: xx-large;
+    }
+   
+    .social-handles{
+        display: flex;
 
     }
 
-    .container .logreg-box{
+     /* this is the logregbox section */
+
+     .container .logreg-box{
         width: 100%;
-        margin-top: 480px;
-        height: 50%;
+        position: absolute;
+        top: 75vh ;
+        height: 60%;
         backdrop-filter: blur();
         
     }
+
+    .logreg-box .form-box{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
     .logreg-box.active .sign-in{
-        transform: translateX(600px);
+        transform: translateX(700px);
     }
     .logreg-box .sign-up{
-        transform: translateX(600px);
+        transform: translateX(700px);
     }
-    .sign-up h2{
+    .login h2{
         margin-top: 25px;
+        font-size: 40px;
     }
-    body{
-        max-height: 200vh;
-    }
+   
     .social-handles a i{
         display: inline-block;
         color: aqua;
     }
     
   }
+
+
+
+
+
+
 @media (max-width:576px){
     .dropdown-menu{
         width: 95%;
