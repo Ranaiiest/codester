@@ -473,7 +473,7 @@ li a{
      .container .logreg-box{
         width: 100%;
         position: absolute;
-        top: 66vh ;
+        margin-top: 63vh;
         height: 63%;
         backdrop-filter: blur(10px);
         
