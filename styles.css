@@ -125,7 +125,7 @@ body{
     position: relative;
 }
 .inner-background{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background: transparent;
     backdrop-filter: blur(10px);
@@ -136,7 +136,7 @@ body{
 .container{
     position : absolute;
     width: 75%;
-    height: 75vh;
+    height: 80vh;
     background: url(./photo-1568142402902-1298fe147da9.webp) no-repeat;
     background-size: cover;
     background-position: center;
@@ -415,7 +415,10 @@ li a{
         background-color: aqua;
         display: flex;
         flex-direction: column;
-        
+        gap: 20px;
+        top: 10%;
+        left: 10%;
+        transform: none;
         
     }
     .background{
@@ -441,7 +444,6 @@ li a{
     .container .content{
         width: 100%;
         height: 40%;
-        order: 1;
         padding-top: 20px;
         padding: 0;
         display: flex;
@@ -451,6 +453,8 @@ li a{
         padding-left: 10px;
         padding-right: 10px;
         text-align: center;
+        /* background-color: #c4103d; */
+        
     }
     .content h1{
         font-size: 20px;
@@ -472,11 +476,9 @@ li a{
 
      .container .logreg-box{
         width: 100%;
-        position: absolute;
-        margin-top: 63vh;
-        height: 63%;
+        position: static;
         backdrop-filter: blur(10px);
-        
+        /* background-color: cornflowerblue; */
     }
 
     .logreg-box .form-box{
