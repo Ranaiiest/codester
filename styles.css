@@ -452,7 +452,7 @@ li a{
         padding-left: 10px;
         padding-right: 10px;
         text-align: center;
-        background-color: #c4103d;
+/*         background-color: #c4103d; */
         
     }
     .content h1{
@@ -477,7 +477,7 @@ li a{
         width: 100%;
         position: static;
         backdrop-filter: blur(10px);
-        background-color: cornflowerblue;
+/*         background-color: cornflowerblue; */
     }
 
     .logreg-box .form-box{
